@@ -1,0 +1,152 @@
+﻿@{
+    ViewData["Title"] = "Iniciar Sesión - PawPort";
+    Layout = null
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body class="bg-light">
+
+    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-between p-0">
+        <header class="d-flex justify-content-between align-items-center px-4 py-3 bg-white border-bottom">
+            <div class="d-flex align-items-center gap-2">
+                <span class="fs-4 fw-bold text-primary">PawPort</span>
+            </div>
+            <nav class="d-none d-md-flex gap-4">
+                <a href="#" class="text-decoration-none text-dark">Inicio</a>
+                <a href="#" class="text-decoration-none text-dark">Explorar Clínicas</a>
+                <a href="#" class="text-decoration-none text-dark">Mis Mascotas</a>
+                <a href="#" class="text-decoration-none text-dark">Mis Citas</a>
+                <a href="#" class="text-decoration-none text-dark">Reseñas</a>
+            </nav>
+            <div class="d-flex gap-2">
+                <a href="#" class="btn btn-link text-decoration-none text-dark">Iniciar Sesión</a>
+                <a href="#" class="btn btn-warning text-white fw-semibold">Registrarse</a>
+            </div>
+        </header>
+
+        <!-- Contenido Principal (Split Screen) -->
+        <div class="row g-0 flex-grow-1">
+            <!-- Panel Izquierdo: Hero con Imagen -->
+            <div class="col-md-6 position-relative d-flex align-items-center justify-content-center bg-dark text-white p-5"
+                 style="background: url('/images/hero-pawport.jpg') center/cover no-repeat;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                <div class="position-relative z-1 text-center max-w-lg">
+                    <h1 class="fw-bold display-5">Uniendo continentes para cuidar de ellos</h1>
+                    <p class="fs-5 mt-3">Accede a la historia clínica unificada más segura del mundo</p>
+                </div>
+            </div>
+
+            <!-- Panel Derecho: Formulario de Login -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center p-5 bg-white">
+                <div class="w-100" style="max-width: 400px;">
+                    <h2 class="fw-bold text-dark text-center">¡Hola de nuevo!</h2>
+                    <p class="text-muted text-center mb-4">Ingresa tus credenciales para continuar.</p>
+
+                    <!-- Tabs Selector -->
+                    <div class="btn-group w-100 mb-4" role="group">
+                        <input type="radio" class="btn-check" name="userType" id="usuario" checked>
+                        <label class="btn btn-outline-primary" for="usuario">Usuario</label>
+
+                        <input type="radio" class="btn-check" name="userType" id="veterinaria">
+                        <label class="btn btn-outline-primary" for="veterinaria">Veterinaria</label>
+                    </div>
+
+                    <!-- Formulario de Entrada -->
+                    <form asp-controller="Account" asp-action="Login" method="post">
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-semibold">Correo electrónico</label>
+                            <input type="email" name="Correo" class="form-control" placeholder="ejemplo@pawport.com" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-secondary small fw-semibold">Contraseña</label>
+                            <input type="password" name="Contra" class="form-control" placeholder="••••••••" required />
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="remember">
+                                <label class="form-check-label text-muted small" for="remember">Recordarme</label>
+                            </div>
+                            <a href="#" class="text-decoration-none small text-primary">Olvidé mi contraseña</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-info text-white w-100 py-2 mb-3 fw-semibold">Iniciar Sesión</button>
+                    </form>
+
+                    <div class="text-center text-muted small my-3">o continuar con</div>
+
+                    <!-- Botones Sociales -->
+                    <div class="row g-2 mb-4">
+                        <div class="col-6">
+                            <button class="btn btn-outline-secondary w-100 btn-sm">Google</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-outline-secondary w-100 btn-sm">Facebook</button>
+                        </div>
+                    </div>
+
+                    <p class="text-center text-muted small">
+                        ¿No tienes cuenta? <a href="#" class="text-danger fw-bold text-decoration-none">Regístrate</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie de Página / Footer -->
+        <footer class="bg-dark text-white p-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <h5 class="fw-bold">PawPort</h5>
+                        <p class="text-muted small">Red internacional de clínicas veterinarias dedicada a brindar cuidado médico de calidad a tus seres queridos más fieles.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h6>Plataforma</h6>
+                        <ul class="list-unstyled text-muted small">
+                            <li>Inicio</li>
+                            <li>Servicios</li>
+                            <li>Clínicas</li>
+                            <li>Citas</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6>Recursos</h6>
+                        <ul class="list-unstyled text-muted small">
+                            <li>Blog</li>
+                            <li>Preguntas Frecuentes</li>
+                            <li>Soporte</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6>Legal</h6>
+                        <ul class="list-unstyled text-muted small">
+                            <li>Términos de Servicio</li>
+                            <li>Política de Privacidad</li>
+                            <li>Cookies</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6>Contacto</h6>
+                        <p class="text-muted small mb-0">info@pawport.com</p>
+                        <p class="text-muted small">+52 55 1234 5678</p>
+                    </div>
+                </div>
+                <hr class="border-secondary my-4" />
+                <div class="d-flex justify-content-between text-muted small">
+                    <span>© 2026 PawPort. Todos los derechos reservados.</span>
+                    <span>Diseñado para Proyecto Escolar.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>

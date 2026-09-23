@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ================= UTILIDADES GENERALES ================= */
+
 a {
     text-decoration: none;
     color: inherit;
@@ -63,7 +63,6 @@ img {
         font-size: 0.95rem;
     }
 
-/* Botones */
 .btn-primary {
     background-color: var(--primary-orange);
     color: var(--white);
@@ -107,7 +106,6 @@ img {
         color: var(--white);
     }
 
-/* ================= ENCABEZADO / NAVEGACIÓN ================= */
 .header {
     width: 100%;
     background-color: var(--white);
@@ -168,7 +166,7 @@ img {
     font-size: 0.95rem;
 }
 
-/* ================= SECCIÓN HERO ================= */
+
 .hero {
     max-width: 1280px;
     margin: 0 auto;
@@ -283,7 +281,6 @@ img {
             color: var(--text-muted);
         }
 
-/* ================= CARACTERÍSTICAS ================= */
 .features {
     background-color: var(--bg-light);
     padding: 5rem 2rem;
@@ -334,7 +331,7 @@ img {
         line-height: 1.5;
     }
 
-/* ================= CÓMO FUNCIONA ================= */
+
 .how-it-works {
     padding: 5rem 2rem;
     background-color: var(--white);
@@ -471,7 +468,6 @@ img {
         font-size: 0.9rem;
     }
 
-/* ================= ESTADÍSTICAS ================= */
 .stats {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -497,7 +493,6 @@ img {
         color: #CBD5E1;
     }
 
-/* ================= TESTIMONIOS ================= */
 .testimonials {
     padding: 5rem 2rem;
     background-color: var(--bg-light);
@@ -558,7 +553,6 @@ img {
         display: block;
     }
 
-/* ================= LLAMADO A LA ACCIÓN (CTA) ================= */
 .cta {
     max-width: 1280px;
     margin: 4rem auto;
@@ -591,7 +585,6 @@ img {
         box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
 
-/* ================= FOOTER ================= */
 .footer {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -675,7 +668,6 @@ img {
     font-size: 0.8rem;
 }
 
-/* ================= DISEÑO RESPONSIVO ================= */
 @media (max-width: 1024px) {
     .features-grid, .clinics-grid, .roles-grid, .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);

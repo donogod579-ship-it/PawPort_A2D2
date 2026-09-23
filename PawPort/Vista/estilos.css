@@ -11,7 +11,6 @@
     --bg-light: #F8FAFC;
     --white: #FFFFFF;
     --border-color: #E2E8F0;
-    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
 }
 
 * {
@@ -28,11 +27,9 @@ body {
     overflow-x: hidden;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
-    transition: all 0.3s ease;
 }
 
 ul {
@@ -74,11 +71,6 @@ img {
     cursor: pointer;
 }
 
-    .btn-primary:hover {
-        opacity: 0.9;
-        transform: translateY(-2px);
-    }
-
 .btn-secondary {
     background-color: transparent;
     color: var(--primary-teal);
@@ -110,9 +102,6 @@ img {
     width: 100%;
     background-color: var(--white);
     border-bottom: 1px solid var(--border-color);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .header-container {
@@ -150,10 +139,6 @@ img {
     font-weight: 500;
 }
 
-    .navbar a:hover {
-        color: var(--primary-teal);
-    }
-
 .header-actions {
     display: flex;
     align-items: center;
@@ -165,7 +150,6 @@ img {
     font-weight: 600;
     font-size: 0.95rem;
 }
-
 
 .hero {
     max-width: 1280px;
@@ -251,7 +235,7 @@ img {
     background: var(--white);
     padding: 0.8rem 1.2rem;
     border-radius: 16px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -298,14 +282,8 @@ img {
     background: var(--white);
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: var(--card-shadow);
-    border: 1px solid rgba(0,0,0,0.03);
-    transition: transform 0.3s ease;
+    border: 1px solid var(--border-color);
 }
-
-    .feature-card:hover {
-        transform: translateY(-5px);
-    }
 
     .feature-card .icon {
         width: 42px;
@@ -330,7 +308,6 @@ img {
         font-size: 0.9rem;
         line-height: 1.5;
     }
-
 
 .how-it-works {
     padding: 5rem 2rem;
@@ -394,7 +371,7 @@ img {
     background: var(--white);
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
 }
 
     .clinic-card img {
@@ -510,7 +487,7 @@ img {
     background: var(--white);
     padding: 2rem;
     border-radius: 18px;
-    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -560,7 +537,7 @@ img {
 }
 
 .cta-container {
-    background: linear-gradient(135deg, #00A8A8 0%, #FF6B4A 100%);
+    background-color: var(--primary-teal);
     border-radius: 24px;
     padding: 4rem 2rem;
     text-align: center;
@@ -577,12 +554,10 @@ img {
         max-width: 600px;
         margin: 0 auto 2rem auto;
         font-size: 1rem;
-        opacity: 0.9;
     }
 
     .cta-container .btn-primary {
         background-color: var(--primary-orange);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
 
 .footer {
@@ -630,10 +605,6 @@ img {
         font-weight: 600;
     }
 
-        .social-links a:hover {
-            background: var(--primary-orange);
-        }
-
 .footer-col h4 {
     color: var(--primary-orange);
     font-size: 1rem;
@@ -648,10 +619,6 @@ img {
     color: #CBD5E1;
     font-size: 0.88rem;
 }
-
-    .footer-col.links a:hover {
-        color: var(--white);
-    }
 
 .footer-col.contact p {
     color: #CBD5E1;

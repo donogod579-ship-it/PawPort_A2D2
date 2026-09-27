@@ -1,1 +1,163 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Dueño - PawPort</title>
+    <link rel="stylesheet" href="Vista/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <!-- Reemplaza con la ruta real de tu logo -->
+                <img src="assets/logo.png" alt="Logo PawPort">
+                PawPort
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Explorar Clínicas</a></li>
+                    <li><a href="#">Mis Mascotas</a></li>
+                    <li><a href="#">Mis Citas</a></li>
+                    <li><a href="#">Reseñas</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn-login">Iniciar Sesión</a>
+                <a href="#" class="btn-primary">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= SECCIÓN DE REGISTRO ================= -->
+    <main class="register-main">
+        <div class="register-layout">
+
+            <!-- Tarjeta del Formulario -->
+            <div class="register-form-card">
+                <h2>Crea tu Cuenta de Dueño</h2>
+                <p class="subtitle">Únete a la comunidad de PawPort para dar un cuidado global a tu mascota.</p>
+
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" placeholder="juan.perez@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Mínimo 8 caracteres" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar contraseña</label>
+                        <input type="password" id="confirm-password" placeholder="Confirma tu contraseña" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pais">País</label>
+                            <select id="pais" required>
+                                <option value="" disabled selected>Selecciona tu país</option>
+                                <option value="SV">El Salvador</option>
+                                <!-- Agrega más países según necesites -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" placeholder="Ej. San Salvador" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono de contacto</label>
+                        <input type="tel" id="telefono" placeholder="+503 7123 4567" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Crear Cuenta</button>
+
+                    <p class="login-link">¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+                </form>
+            </div>
+
+            <!-- Área de Información / Imagen -->
+            <div class="register-info">
+                <!-- Reemplaza con la ruta de tu imagen de las mascotas -->
+                <img src="assets/mascotas-registro.png" alt="Mascotas felices">
+                <h3>Un pasaporte unificado de salud 🐾</h3>
+                <p>PawPort permite registrar la información de todas tus mascotas, vacunas aplicadas, alergias y recetas médicas accesibles por veterinarios autorizados en todo el mundo.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <div class="logo">
+                    <!-- Reemplaza con la ruta de tu logo blanco/transparente -->
+                    <img src="assets/logo-white.png" alt="Logo PawPort" style="width: 28px; height: 28px; filter: brightness(0) invert(1);">
+                    <span style="color: var(--white);">PawPort</span>
+                </div>
+                <p>Red internacional de clínicas veterinarias dedicada a brindar cuidado médico de calidad a tus seres queridos más fieles.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Plataforma</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Clínicas</a></li>
+                    <li><a href="#">Citas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact">
+                <h4>Contacto</h4>
+                <p>info@pawport.com</p>
+                <p>+52 55 1234 5678</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PawPort. Todos los derechos reservados.</p>
+            <p>Diseñado para Proyecto Escolar.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

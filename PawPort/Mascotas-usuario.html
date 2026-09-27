@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Mascotas - PawPort</title>
+    <link rel="stylesheet" href="Vista/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Img/logo.png" alt="Logo PawPort">
+                PawPort
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Clínicas</a></li>
+                    <li><a href="#">Citas</a></li>
+                    <li><a href="#" class="active">Expedientes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <span>Alejandra Gómez</span>
+                <i class="fas fa-user-circle avatar-icon"></i>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="dashboard-container">
+
+            <div class="dashboard-header">
+                <div>
+                    <h1>Mis Mascotas</h1>
+                    <p class="subtitle">Administra el historial de tus seres queridos y accede a sus expedientes globales.</p>
+                </div>
+                <button class="btn-primary">+ Registrar Mascota</button>
+            </div>
+
+            <div class="pets-grid">
+                <div class="pet-card">
+                    <img src="Img/luna-cover.jpg" alt="Luna">
+                    <div class="pet-card-body">
+                        <div class="pet-card-header">
+                            <h3>Luna</h3>
+                            <span class="badge badge-teal">Perro</span>
+                        </div>
+                        <p class="pet-info">Golden Retriever • 3 años</p>
+                        <div class="pet-card-actions">
+                            <a href="#" class="action-link active">Ver Expediente</a>
+                            <a href="#" class="action-link">Editar Perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="Img/max-cover.jpg" alt="Max">
+                    <div class="pet-card-body">
+                        <div class="pet-card-header">
+                            <h3>Max</h3>
+                            <span class="badge badge-teal">Gato</span>
+                        </div>
+                        <p class="pet-info">Siamés • 1 año</p>
+                        <div class="pet-card-actions">
+                            <a href="#" class="action-link active">Ver Expediente</a>
+                            <a href="#" class="action-link">Editar Perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="Img/kiwi-cover.jpg" alt="Kiwi">
+                    <div class="pet-card-body">
+                        <div class="pet-card-header">
+                            <h3>Kiwi</h3>
+                            <span class="badge badge-teal">Ave</span>
+                        </div>
+                        <p class="pet-info">Cacatúa • 6 meses</p>
+                        <div class="pet-card-actions">
+                            <a href="#" class="action-link active">Ver Expediente</a>
+                            <a href="#" class="action-link">Editar Perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet-details-card">
+                <div class="details-header">
+                    <img src="Img/luna-avatar.jpg" alt="Luna Avatar" class="details-avatar">
+                    <div class="details-title">
+                        <div class="name-badge-row">
+                            <h2>Luna</h2>
+                            <span class="badge badge-pink">Hembra</span>
+                        </div>
+                        <p>Golden Retriever • 3 años • 28 kg</p>
+                    </div>
+                </div>
+
+                <div class="details-grid">
+                    <div class="details-column">
+                        <h3>Historial de Vacunación</h3>
+
+                        <div class="history-item">
+                            <div class="history-info">
+                                <h4>Antirrábica</h4>
+                                <p>Aplicada el 15/03/2026</p>
+                            </div>
+                            <span class="badge badge-green">Vigente</span>
+                        </div>
+
+                        <div class="history-item">
+                            <div class="history-info">
+                                <h4>Parvovirus</h4>
+                                <p>Aplicada el 20/01/2026</p>
+                            </div>
+                            <span class="badge badge-green">Vigente</span>
+                        </div>
+
+                        <div class="history-item">
+                            <div class="history-info">
+                                <h4>Refuerzo Quíntuple</h4>
+                                <p>Aplicada el 20/01/2026</p>
+                            </div>
+                            <span class="badge badge-green">Vigente</span>
+                        </div>
+                    </div>
+
+                    <div class="details-column">
+                        <h3>Consultas Recientes</h3>
+
+                        <div class="history-item">
+                            <div class="history-info">
+                                <h4>Chequeo preventivo anual</h4>
+                                <a href="#" class="clinic-link">Clínica San Francisco</a>
+                            </div>
+                            <span class="date-text">18/10/2025</span>
+                        </div>
+
+                        <div class="history-item">
+                            <div class="history-info">
+                                <h4>Revisión orejas / otitis</h4>
+                                <a href="#" class="clinic-link">Veterinaria Escalón Central</a>
+                            </div>
+                            <span class="date-text">04/05/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+</body>
+</html>

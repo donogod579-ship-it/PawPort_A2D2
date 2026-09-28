@@ -13,6 +13,40 @@
     --border-color: #E2E8F0;
 }
 
+/* Ajustes visuales específicos para el botón de Iniciar Sesión en la página de login */
+.login-form-container .btn-submit {
+    display: block; /* ocupar todo el ancho del contenedor del formulario */
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+    background-color: var(--primary-teal);
+    color: var(--white);
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.12s ease;
+    margin-top: 1rem;
+}
+
+.login-form-container .btn-submit:hover {
+    background-color: #067A96;
+    transform: translateY(-1px);
+}
+
+/* Asegurar que el enlace con clase btn-submit se comporte como botón */
+.login-form-container a.btn-submit {
+    text-decoration: none;
+    display: block;
+}
+
+/* Ajuste del contenedor para alinear el botón similar a la referencia */
+.login-form-container .form-options + .btn-submit {
+    margin-left: 0; /* alineación por defecto a la izquierda */
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -953,19 +987,31 @@ img {
     background-color: var(--primary-teal);
     color: var(--white);
     width: 100%;
-    padding: 0.9rem;
+    padding: 0.95rem 1rem; /* mayor altura y padding horizontal */
     border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.05rem;
     cursor: pointer;
     margin-top: 1.5rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.12s ease;
 }
 
     .btn-submit:hover {
         background-color: #008f8f;
     }
+
+/* Ajuste específico: botón Crear Cuenta dentro de la tarjeta de registro de usuario
+   Para que tenga un largo fijo y aparezca centrado como en la plantilla de referencia */
+.register-form-card .btn-submit {
+    display: block;
+    width: 100%;
+    max-width: 380px; /* limitar el ancho para que no ocupe toda la tarjeta */
+    margin: 1rem auto 0; /* centrar dentro de la tarjeta */
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+}
 
 .login-link {
     text-align: center;

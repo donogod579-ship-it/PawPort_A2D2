@@ -10,7 +10,6 @@
 </head>
 <body>
 
-    <!-- ================= HEADER ================= -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
@@ -27,7 +26,7 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="#" class="btn-login" style="color: var(--text-dark); font-weight: 600;">Iniciar Sesión</a>
+                <a href="login-perfil.html" class="btn-login" style="color: var(--text-dark); font-weight: 600;">Iniciar Sesión</a>
                 <a href="registro-usuario.html" class="btn-primary" style="background-color: #ff7f50;">Registrarse</a>
             </div>
         </div>
@@ -38,7 +37,8 @@
         <div class="login-layout">
 
             <!-- Mitad Izquierda: Imagen y Texto -->
-            <div class="login-hero">
+            <!-- Se agrega el estilo de fondo aquí -->
+            <div class="login-hero" style="background-image: url('Img/Inicio%20de%20sesión.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 <div class="login-hero-content">
                     <h1>Uniendo continentes para cuidar de ellos</h1>
                     <p>Accede a la historia clínica unificada más segura del mundo.</p>
@@ -54,7 +54,7 @@
                     <!-- Selector de Perfil (Pastilla) -->
                     <div class="role-toggle">
                         <button class="role-btn active" type="button">Usuario</button>
-                        <button class="role-btn" type="button">Veterinaria</button>
+                        <button class="role-btn" type="button" onclick="window.location.href='registro-clinica.html'">Veterinaria</button>
                     </div>
 
                     <form action="#" method="POST">
@@ -86,7 +86,7 @@
 
                         <!-- Botón de Google -->
                         <button type="button" class="btn-google">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google">
+                            <img src="Img/google.png" alt="Google">
                             Google
                         </button>
 
@@ -100,7 +100,60 @@
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
-        <!-- Usa el mismo footer de tus otras páginas -->
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <div class="logo">
+                    <img src="Img/Logo.png" alt="PawPort Logo">
+                    <span>PawPort</span>
+                </div>
+                <p>Red internacional de clínicas veterinarias dedicada a brindar cuidado médico de calidad a tus seres queridos más fieles.</p>
+                <div class="social-links">
+                    <a href="#"><img src="Img/Facebook.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#"><img src="Img/Twiter or X.png" alt="Twitter" class="social-icon"></a>
+                    <a href="#"><img src="Img/instagram.png" alt="Instagram" class="social-icon"></a>
+                    <a href="#"><img src="Img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+                </div>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Plataforma</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Clínicas</a></li>
+                    <li><a href="#">Citas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact">
+                <h4>Contacto</h4>
+                <p>info@pawport.com</p>
+                <p>+52 55 1234 5678</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PawPort. Todos los derechos reservados.</p>
+            <p>Diseñado para Cooperativas Veterinarias.</p>
+        </div>
     </footer>
 
 </body>

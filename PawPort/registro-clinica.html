@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clínica Veterinaria - PawPort</title>
+    <link rel="stylesheet" href="Vista/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Img/Logo.png" alt="Logo PawPort">
+                PawPort
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="#">Explorar Clínicas</a></li>
+                    <li><a href="#">Mis Mascotas</a></li>
+                    <li><a href="#">Mis Citas</a></li>
+                    <li><a href="#">Reseñas</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="login-perfil.html" class="btn-login">Iniciar Sesión</a>
+                <a href="registro-usuario.html" class="btn-primary">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= SECCIÓN DE REGISTRO CLÍNICA ================= -->
+    <main class="clinic-register-page">
+        <div class="clinic-register-header">
+            <span class="badge">Red de Clínicas Globales 🐾</span>
+            <h1>Registra tu Clínica Veterinaria</h1>
+            <p>Forma parte de la red de clínicas unificadas y optimiza la atención de tus especialistas y el flujo de pacientes.</p>
+        </div>
+
+        <div class="clinic-register-container">
+            <form action="dashboard-clinica.html" method="GET">
+
+                <!-- SECCIÓN 1: Datos de la clínica -->
+                <div class="form-section">
+                    <h3>1. Datos de la Clínica</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre-clinica">Nombre de la clínica</label>
+                            <input type="text" id="nombre-clinica" placeholder="Clínica Veterinaria San Francisco" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo-clinica">Correo electrónico</label>
+                            <input type="email" id="correo-clinica" placeholder="contacto@vetsanfrancisco.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pass-clinica">Contraseña</label>
+                            <input type="password" id="pass-clinica" placeholder="••••••••" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel-clinica">Teléfono de contacto</label>
+                            <input type="tel" id="tel-clinica" placeholder="+503 2234 5678" required>
+                        </div>
+                    </div>
+                    <!-- Se cambió a form-row-3 según el CSS -->
+                    <div class="form-row-3">
+                        <div class="form-group">
+                            <label for="pais-clinica">País</label>
+                            <input type="text" id="pais-clinica" placeholder="El Salvador" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad-clinica">Ciudad</label>
+                            <input type="text" id="ciudad-clinica" placeholder="San Salvador" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion-clinica">Dirección completa</label>
+                            <input type="text" id="direccion-clinica" placeholder="Colonia Escalón, Calle del Mirador #123" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN 2: Especialidades -->
+                <div class="form-section">
+                    <h3>2. Especialidades Disponibles</h3>
+                    <p class="form-section-desc">Selecciona las especialidades médicas veterinarias que ofreces en tu establecimiento:</p>
+                    <div class="tags-container">
+                        <button type="button" class="specialty-tag active">Medicina general <i class="fas fa-plus"></i></button>
+                        <button type="button" class="specialty-tag">Cirugía <i class="fas fa-plus"></i></button>
+                        <button type="button" class="specialty-tag active">Dermatología <i class="fas fa-plus"></i></button>
+                        <button type="button" class="specialty-tag">Odontología <i class="fas fa-plus"></i></button>
+                        <button type="button" class="specialty-tag">Cardiología <i class="fas fa-plus"></i></button>
+                        <button type="button" class="specialty-tag">Oftalmología <i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN 3: Horarios y Detalles -->
+                <div class="form-section">
+                    <h3>3. Horarios y Detalles de Atención</h3>
+                    <div class="schedule-grid">
+
+                        <!-- Mitad Izquierda -->
+                        <div>
+                            <label class="form-group label">Horarios de atención sugeridos</label>
+                            <div class="schedule-row">
+                                <span class="schedule-day">Lunes - Viernes</span>
+                                <input type="time" class="schedule-time-input" value="08:00">
+                                <span class="schedule-separator">a</span>
+                                <input type="time" class="schedule-time-input" value="18:00">
+                            </div>
+                            <div class="schedule-row">
+                                <span class="schedule-day">Sábado</span>
+                                <input type="time" class="schedule-time-input" value="08:00">
+                                <span class="schedule-separator">a</span>
+                                <input type="time" class="schedule-time-input" value="18:00">
+                            </div>
+                            <div class="schedule-row">
+                                <span class="schedule-day">Domingo</span>
+                                <input type="time" class="schedule-time-input" value="08:00">
+                                <span class="schedule-separator">a</span>
+                                <input type="time" class="schedule-time-input" value="18:00">
+                            </div>
+                        </div>
+
+                        <!-- Mitad Derecha -->
+                        <div>
+                            <div class="form-group">
+                                <label for="desc-clinica">Descripción de la clínica</label>
+                                <textarea id="desc-clinica" placeholder="Describe los servicios, infraestructura y enfoque médico de tu clínica veterinaria..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Logotipo de la Clínica</label>
+                                <div class="upload-zone">
+                                    <i class="fas fa-upload" style="font-size: 1.5rem; color: var(--primary-teal); margin-bottom: 10px;"></i>
+                                    <p>Haz clic para cargar imagen</p>
+                                    <span>PNG, JPG hasta 5MB</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BOTÓN SUBMIT -->
+                <button type="submit" class="btn-submit">Registrar Clínica Veterinaria</button>
+
+            </form>
+        </div>
+    </main>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <div class="logo">
+                    <img src="Img/Logo.png" alt="PawPort Logo">
+                    <span>PawPort</span>
+                </div>
+                <p>Red internacional de clínicas veterinarias dedicada a brindar cuidado médico de calidad a tus seres queridos más fieles.</p>
+                <div class="social-links">
+                    <a href="#"><img src="Img/Facebook.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#"><img src="Img/Twiter or X.png" alt="Twitter" class="social-icon"></a>
+                    <a href="#"><img src="Img/instagram.png" alt="Instagram" class="social-icon"></a>
+                    <a href="#"><img src="Img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+                </div>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Plataforma</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Clínicas</a></li>
+                    <li><a href="#">Citas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact">
+                <h4>Contacto</h4>
+                <p>info@pawport.com</p>
+                <p>+52 55 1234 5678</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PawPort. Todos los derechos reservados.</p>
+            <p>Diseñado para Cooperativas Veterinarias.</p>
+        </div>
+    </footer>
+</body>
+</html>

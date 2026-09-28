@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Clínico - PawPort</title>
+    <link rel="stylesheet" href="Vista/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- ================= HEADER DASHBOARD (MANTENIDO) ================= -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Img/Logo.png" alt="Logo PawPort">
+                PawPort
+            </div>
+
+            <nav class="navbar dashboard-nav">
+                <ul>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="#">Citas</a></li>
+                    <li><a href="#">Pacientes</a></li>
+                    <li><a href="#">Inventario</a></li>
+                    <li><a href="#">Reportes</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-profile">
+                <span class="clinic-name">Clínica San Francisco</span>
+                <i class="fas fa-user-circle avatar-icon"></i>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= MAIN DASHBOARD ================= -->
+    <main class="dashboard-main">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <div>
+                    <h1>Panel de Control Clínico</h1>
+                    <p class="subtitle">Bienvenido al portal médico de la sucursal San Salvador.</p>
+                </div>
+            </div>
+
+            <!-- TARJETAS DE ESTADÍSTICAS -->
+            <div class="clinic-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <span>Citas Hoy</span>
+                        <div class="stat-icon icon-blue"><i class="far fa-calendar-check"></i></div>
+                    </div>
+                    <h3>8</h3>
+                    <p>Mascotas agendadas</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <span>Pacientes Totales</span>
+                        <div class="stat-icon icon-red"><i class="far fa-user"></i></div>
+                    </div>
+                    <h3>156</h3>
+                    <p>Expedientes activos</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <span>Calificación Promedio</span>
+                        <div class="stat-icon icon-teal"><i class="far fa-star"></i></div>
+                    </div>
+                    <h3>4.8 ★</h3>
+                    <p>Basado en 42 reseñas</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <span>Reseñas Nuevas</span>
+                        <div class="stat-icon icon-orange"><i class="far fa-bell"></i></div>
+                    </div>
+                    <h3>12</h3>
+                    <p>Esta semana</p>
+                </div>
+            </div>
+
+            <!-- SECCIÓN DE TABLA Y RESEÑAS -->
+            <div class="dashboard-columns">
+
+                <!-- Citas del día -->
+                <div class="citas-table-card">
+                    <h2 class="dashboard-section-title" style="padding: 1.5rem 1.5rem 0;">Citas del Día</h2>
+                    <table class="citas-table">
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Mascota</th>
+                                <th>Propietario</th>
+                                <th>Tipo Consulta</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09:00 AM</td>
+                                <td>Luna (Pug)</td>
+                                <td><a href="#">Alejandra Gómez</a></td>
+                                <td>Chequeo de rutina</td>
+                                <td><span class="status-badge status-esperando">Esperando</span></td>
+                            </tr>
+                            <tr>
+                                <td>10:30 AM</td>
+                                <td>Toby (Golden)</td>
+                                <td><a href="#">Javier Fernández</a></td>
+                                <td>Vacuna anual</td>
+                                <td><span class="status-badge status-consulta">En consulta</span></td>
+                            </tr>
+                            <tr>
+                                <td>11:15 AM</td>
+                                <td>Milo (Gato)</td>
+                                <td><a href="#">Mariana Silva</a></td>
+                                <td>Revisión orejas</td>
+                                <td><span class="status-badge status-completado">Completado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Últimas reseñas -->
+                <div class="reviews-list">
+                    <h2 class="dashboard-section-title">Últimas Reseñas</h2>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <h4>Alejandra Gómez</h4>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <p>"La atención del Dr. Carlos fue impecable. Muy atento."</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <h4>Javier Fernández</h4>
+                            <div class="review-stars">⭐⭐⭐⭐☆</div>
+                        </div>
+                        <p>"Increíble servicio rápido y sin estrés para Toby."</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer dashboard-footer">
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <div class="logo">
+                    <img src="Img/Logo.png" alt="PawPort Logo">
+                    <span>PawPort</span>
+                </div>
+                <p>Red internacional de clínicas veterinarias dedicada a brindar cuidado médico de calidad a tus seres queridos más fieles.</p>
+                <div class="social-links">
+                    <a href="#"><img src="Img/Facebook.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#"><img src="Img/Twiter or X.png" alt="Twitter" class="social-icon"></a>
+                    <a href="#"><img src="Img/instagram.png" alt="Instagram" class="social-icon"></a>
+                    <a href="#"><img src="Img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+                </div>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Plataforma</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Clínicas</a></li>
+                    <li><a href="#">Citas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact">
+                <h4>Contacto</h4>
+                <p>info@pawport.com</p>
+                <p>+52 55 1234 5678</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PawPort. Todos los derechos reservados.</p>
+            <p>Diseñado para Cooperativas Veterinarias.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
